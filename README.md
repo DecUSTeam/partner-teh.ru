@@ -1,0 +1,1 @@
+# partner-teh.ru
