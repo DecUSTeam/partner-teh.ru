@@ -20,7 +20,7 @@ export default {
     source: {
         html     : `${sourceFolder}/layouts/partials/*.pug`                    ,
         styles   : `${sourceFolder}/styles/partials/*.scss`                    ,
-        scripts  : `${sourceFolder}/scripts/partials/*.js`                     ,
+        scripts  : `${sourceFolder}/scripts/*.js`                     ,
         images   : `${sourceFolder}/assets/images/**/*.{jpg,jpeg,png,gif,webp,svg}`,
         fonts    : `${sourceFolder}/assets/fonts/**/*.{ttf,woff,woff2}`        ,
         libraries: `${sourceFolder}/assets/libraries/**/*.*`                   ,

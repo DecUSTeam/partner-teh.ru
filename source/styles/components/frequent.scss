@@ -10,23 +10,38 @@ a {
     text-decoration: none;
 }
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 18px 32px;
+    display: block;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     border: 1px solid $GRAY;
     border-radius: 30px;
-    width: 216px; height: 57px;
+    background-color: white;
+    transition: all .2s linear;
+
+    font-size: 18px;
+    line-height: 18px;
     text-align: center;
-    vertical-align: middle;
     font-size: 18px;
     font-weight: 600;
     color: $GRAY;
 
     &:hover {
+        cursor: pointer;
         color: $BLUE;
         border-color: $DARK;
     }
     &:active {
         background-color: $LIGHNT_BLUE;
+    }
+    &.button--blue {
+        color: white;
+        background-color: $BLUE;
+        border-color: $BLUE;
+        &:hover {
+            background-color: white;
+            color: inherit
+        }
     }
 }

@@ -29,3 +29,18 @@
         width: 1320px;
     }
 }
+@include mediaQuery(1500px) {
+    .container {
+        width: 1420px;
+    }
+}
+@include mediaQuery(1600px) {
+    .container {
+        width: 1520px;
+    }
+}
+@include mediaQuery(1950px) {
+    .container {
+        width: 1920px;
+    }
+}
