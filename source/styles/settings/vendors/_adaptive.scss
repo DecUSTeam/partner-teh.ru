@@ -1,0 +1,31 @@
+/* Adaptive */
+
+@include mediaQuery($breakpoint-sm) {
+    .container {
+        width: 540px;
+    }
+}
+
+@include mediaQuery($breakpoint-md) {
+    .container {
+        width: 720px;
+    }
+}
+
+@include mediaQuery($breakpoint-lg) {
+    .container {
+        width: 960px;
+    }
+}
+
+@include mediaQuery($breakpoint-xl) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@include mediaQuery($breakpoint-xxl) {
+    .container {
+        width: 1320px;
+    }
+}

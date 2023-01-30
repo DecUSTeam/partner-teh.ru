@@ -1,0 +1,9 @@
+{
+    "path-intellisense.mappings": {
+        "@images":    "${workspaceFolder}/source/assets/images",
+        "@svg":       "${workspaceFolder}/source/assets/images/svgs",
+        "@scripts":   "${workspaceFolder}/source/scripts/",
+        "@styles":    "${workspaceFolder}/source/styles/",
+        "@libraries": "${workspaceFolder}/assets/libraries/"
+    }
+}

@@ -1,0 +1,16 @@
+.header {
+    &-container {
+        padding: $header_padding;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 116px;
+    }
+    .address_email {
+        display: none;
+    }
+}
