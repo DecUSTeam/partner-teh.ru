@@ -1,5 +1,10 @@
 /* Adaptive */
-
+@include mediaQuery($breakpoint-xs) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 @include mediaQuery($breakpoint-sm) {
     .container {
         width: 540px;

@@ -9,30 +9,65 @@
     &_title {
         margin-bottom: 23px;
         width: 450px;
-        font-size: 48px;
         font-weight: 600;
         line-height: 48px;
+        @include mediaQuery($breakpoint-xs) {
+            width: 80%;
+            font-size: 40px;
+        }
+        @include mediaQuery($breakpoint-md) {
+            font-size: 40px;
+        }
         @include mediaQuery($breakpoint-lg) {
-            width: 100%;
+            font-size: 48px;
+            // width: 100%;
         }
         @include mediaQuery($breakpoint-xl) {
-            width: 100%;
+            // width: 100%;
         }
     }
     &_subtitle {
         margin-bottom: 38px;
         width: 450px;
-        font-size: 18px;
+        @include mediaQuery($breakpoint-xs) {
+            width: 35%;
+        }
     }
     &-controls {
-        display: flex;
+        gap: 10px;
         flex-wrap: wrap;
-        gap: 12px;
-        @include mediaQuery($breakpoint-lg) {
+        display: flex;
+        @include mediaQuery($breakpoint-xs) {
             flex-direction: column;
         }
         @include mediaQuery($breakpoint-xxl) {
             flex-direction: row;
+        }
+    }
+    &-control {
+        @include mediaQuery($breakpoint-xs) {
+            position: relative;
+            width: 100%;
+            background-color: #fff;
+            color: $DARK;
+            display: flex;
+            justify-content: end;
+            &--state {
+                position: static;
+                aspect-ratio: 1256 / 755;
+                width: 60%;
+                margin-right: -30px;
+            }
+            p {
+                position: absolute;
+                top: 18px; left: 32px;
+            }
+        }
+        @include mediaQuery($breakpoint-lg) {
+            width: auto;
+            p {
+                position: static;
+            }
         }
     }
     &_image {
@@ -47,6 +82,14 @@
             opacity: 1;
             &.clear {
                 opacity: .1;
+            }
+            @include mediaQuery($breakpoint-xs) {
+                top: 100px; right: 10px;
+                height: 150px;
+            }
+            @include mediaQuery($breakpoint-sm) {
+                top: 30px; right: -10px;
+                height: 230px;
             }
             @include mediaQuery($breakpoint-lg) {
                 top: 40px;
@@ -78,8 +121,17 @@
     &-cards {
         display: grid;
         grid-template-rows: 1fr;
-        gap: 18px;
+        @include mediaQuery($breakpoint-xs) {
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                "A B"
+                "C D"
+                "E E"
+            ;
+        }
         @include mediaQuery($breakpoint-xl) {
+            gap: 18px;
             grid-template-areas:
                 "A . ."
                 "B . ."
@@ -87,35 +139,37 @@
             ;
             grid-template-columns: repeat(3, 1fr);
         }
-        @include mediaQuery($breakpoint-lg) {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-areas:
-            "A ."
-            "B C"
-            "D E"
-        ;
-        }
     }
     &-card {
         position: relative;
-        padding: 22px 30px;
         border: 1px solid $DARK;
         border-radius: 30px;
         overflow: hidden;
         background-color: #fff;
 
-        font-size: 21px;
         font-weight: 600;
+        @include mediaQuery($breakpoint-xs) {
+            padding: 10px 15px;
+            font-size: 100%;
+        }
+        @include mediaQuery($breakpoint-md) {
+            padding: 22px 30px;
+        }
         @include mediaQuery($breakpoint-xl) {
-            font-size: 18px;
+            font-size: 115%;
         }
         &_text {
             position: relative;
             z-index: 1000;
             b {
                 display: inline;
-                font-size: 38px;
                 font-weight: 700;
+                @include mediaQuery($breakpoint-xs) {
+                    font-size: 25px;
+                }
+                @include mediaQuery($breakpoint-md) {
+                    font-size: 38px;
+                }
             }
         }
         &:nth-child(1) {
@@ -135,7 +189,7 @@
         }
         &_number {
             position: absolute;
-            bottom: -25%; left: -5%;
+            bottom: -40px; left: -30px;
             z-index: 100;
             font-size: 120px;
             line-height: 120px;

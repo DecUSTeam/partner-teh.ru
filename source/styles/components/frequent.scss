@@ -12,9 +12,6 @@ a {
 .button {
     padding: 18px 32px;
     display: block;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     border: 1px solid $GRAY;
     border-radius: 30px;
     background-color: white;
@@ -36,9 +33,11 @@ a {
         background-color: $LIGHNT_BLUE;
     }
     &.button--blue {
-        color: white;
-        background-color: $BLUE;
-        border-color: $BLUE;
+        @include mediaQuery($breakpoint-lg) {
+            color: white;
+            background-color: $BLUE;
+            border-color: $BLUE;
+        }
         &:hover {
             background-color: white;
             color: inherit

@@ -12,11 +12,16 @@
     background:     $BG_COLOR;
 
     font-family: $font-family;
-    font-size:     $font-size;
     font-weight: $font-weight;
     line-height: $line-height;
     color:        $TEXT_COLOR;
     font-feature-settings: "lnum";
+    @include mediaQuery($breakpoint-xs) {
+        font-size: $font-size_mobile;
+    }
+    @include mediaQuery($breakpoint-md) {
+        font-size:     $font-size;
+    }
 }
 
 @import '../../components/frequent';
