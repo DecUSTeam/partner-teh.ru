@@ -5,13 +5,13 @@ main.main
             p.main_subtitle Проектирование инфраструктур любой сложности с максимальной ответственностью
             ul.main-controls
                 li.main-controls-li
-                    button.main-control.button.button--blue(data-name="power_supply") Электроснабжение
+                    button.main-control.button.button--blue(data-to="power" data-name="power_supply") Электроснабжение
                 li.main-controls-li
-                    button.main-control.button.button--blue(data-name="gas_supply") Газоснабжение
+                    button.main-control.button.button--blue(data-to="gas" data-name="gas_supply") Газоснабжение
                 li.main-controls-li
-                    button.main-control.button.button--blue(data-name="communication_system") Системы связи
+                    button.main-control.button.button--blue(data-to="communication" data-name="communication_system") Системы связи
         .main_image__wrapper
-            img.main_image(src="@images/home.png", alt="")
+            img.main_image.visible(data-name="default" src="@images/main/home.png", alt="")
         .main-cards
             .main-card
                 .main-card_number

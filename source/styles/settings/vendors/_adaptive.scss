@@ -6,6 +6,7 @@
     }
 }
 
+
 @include mediaQuery($breakpoint-md) {
     .container {
         width: 720px;

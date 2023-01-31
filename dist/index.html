@@ -17,8 +17,8 @@
     <link rel="apple-touch-icon" href="./apple-touch-icon.png">
     <link rel="apple-touch-icon" href="./assets/images/favicons/apple-touch-icon-1024x1024.png" sizes="1024x1024">
     <title>ООО &quot;Партнер&quot;</title>
-    <link rel="stylesheet" href="./assets/styles/index.min.css?_version=20230130230754">
-    <script defer src="./assets/scripts/index.min.js?_version=20230130230754"></script>
+    <link rel="stylesheet" href="./assets/styles/index.min.css?_version=20230131031454">
+    <script defer src="./assets/scripts/index.min.js?_version=20230131031454"></script>
 </head>
 
 <body class="document-body">
@@ -30,9 +30,7 @@
                 </div>
                 <div class="header-right"><a class="button" href="https://platforma.partner-teh.ru">Для сотрудников</a>
                     <div class="address__wrapper">
-                        <address class="address"><a class="address_phone" href="tel:+79001200000">+7 900 120-00-00</a>
-                            <p class="address_email">ooo-partner@internet.ru</p>
-                        </address>
+                        <address class="address"><a class="address_phone" href="tel:+79001200000">+7 900 120-00-00</a><a class="address_email" href="mailto:ooo-partner@internet.ru">ooo-partner@internet.ru</a></address>
                     </div>
                 </div>
             </div>
@@ -43,12 +41,12 @@
                     <h1 class="main_title">Проектирование инфраструктур</h1>
                     <p class="main_subtitle">Проектирование инфраструктур любой сложности с максимальной ответственностью</p>
                     <ul class="main-controls">
-                        <li class="main-controls-li"><button class="main-control button button--blue" data-name="power_supply">Электроснабжение</button></li>
-                        <li class="main-controls-li"><button class="main-control button button--blue" data-name="gas_supply">Газоснабжение</button></li>
-                        <li class="main-controls-li"><button class="main-control button button--blue" data-name="communication_system">Системы связи</button></li>
+                        <li class="main-controls-li"><button class="main-control button button--blue" data-to="power" data-name="power_supply">Электроснабжение</button></li>
+                        <li class="main-controls-li"><button class="main-control button button--blue" data-to="gas" data-name="gas_supply">Газоснабжение</button></li>
+                        <li class="main-controls-li"><button class="main-control button button--blue" data-to="communication" data-name="communication_system">Системы связи</button></li>
                     </ul>
                 </div>
-                <div class="main_image__wrapper"><img class="main_image" src="./assets/images/home.png" alt=""></div>
+                <div class="main_image__wrapper"><img class="main_image visible" data-name="default" src="./assets/images/main/home.png" alt=""></div>
                 <div class="main-cards">
                     <div class="main-card">
                         <div class="main-card_number"></div>
@@ -73,6 +71,108 @@
                 </div>
             </div>
         </main>
+        <article class="infrastructure" id="power">
+            <div class="infrastructure-container container">
+                <div class="infrastructure_image__wrapper"><img class="infrastructure_image" src="./assets/images/infrastructures/power.png" alt=""></div>
+                <div class="infrastructure-content">
+                    <h2 class="infrastructure_title">Электроснабжение</h2>
+                    <div class="infrastructure-filling">
+                        <p class="infrastructure_text">Проектирование полного цикла электрификации 110-0,4 кВ от объектов Электросетевых компаний до принимающих устройств Заявителя</p>
+                        <ul class="infrastructure-list">
+                            <li class="infrastructure-list_enumeration">Электрических трансформаторных подстанций, открытых и закрытых распределительных устройств</li>
+                            <li class="infrastructure-list_enumeration">Линейных объектов на базе металлических, многогранных и композитных опор</li>
+                            <li class="infrastructure-list_enumeration">кабельных сетей</li>
+                            <li class="infrastructure-list_enumeration">объектов микрогенерации</li>
+                            <li class="infrastructure-list_enumeration">систем интеллектуального учета электроэнергии</li>
+                            <li class="infrastructure-list_enumeration">систем автоматизации</li>
+                            <li class="infrastructure-list_enumeration">современных цифровых систем мониторинга и управления энергообъектом</li>
+                        </ul>
+                        <p class="infrastructure_text">Применяемые решения на современном оборудовании, изделиях и материалах в полном соответствии требованиям нормативных документов и политик компаний в области энергосбережения, энергоэффективности, экологичности и экономической эффективности</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="infrastructure" id="gas">
+            <div class="infrastructure-container container">
+                <div class="infrastructure_image__wrapper"><img class="infrastructure_image" src="./assets/images/infrastructures/gas.png" alt=""></div>
+                <div class="infrastructure-content">
+                    <h2 class="infrastructure_title">Газоснабжение</h2>
+                    <div class="infrastructure-filling">
+                        <p class="infrastructure_text">Проектирование полного цикла электрификации 110-0,4 кВ от объектов Электросетевых компаний до принимающих устройств Заявителя</p>
+                        <ul class="infrastructure-list">
+                            <li class="infrastructure-list_enumeration">Электрических трансформаторных подстанций, открытых и закрытых распределительных устройств</li>
+                            <li class="infrastructure-list_enumeration">Линейных объектов на базе металлических, многогранных и композитных опор</li>
+                            <li class="infrastructure-list_enumeration">кабельных сетей</li>
+                            <li class="infrastructure-list_enumeration">объектов микрогенерации</li>
+                            <li class="infrastructure-list_enumeration">систем интеллектуального учета электроэнергии</li>
+                            <li class="infrastructure-list_enumeration">систем автоматизации</li>
+                            <li class="infrastructure-list_enumeration">современных цифровых систем мониторинга и управления энергообъектом</li>
+                        </ul>
+                        <p class="infrastructure_text">Применяемые решения на современном оборудовании, изделиях и материалах в полном соответствии требованиям нормативных документов и политик компаний в области энергосбережения, энергоэффективности, экологичности и экономической эффективности</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="infrastructure" id="communication">
+            <div class="infrastructure-container container">
+                <div class="infrastructure_image__wrapper"><img class="infrastructure_image" src="./assets/images/infrastructures/communication.png" alt=""></div>
+                <div class="infrastructure-content">
+                    <h2 class="infrastructure_title">Системы связи</h2>
+                    <div class="infrastructure-filling">
+                        <p class="infrastructure_text">Проектирование полного цикла электрификации 110-0,4 кВ от объектов Электросетевых компаний до принимающих устройств Заявителя</p>
+                        <ul class="infrastructure-list">
+                            <li class="infrastructure-list_enumeration">Электрических трансформаторных подстанций, открытых и закрытых распределительных устройств</li>
+                            <li class="infrastructure-list_enumeration">Линейных объектов на базе металлических, многогранных и композитных опор</li>
+                            <li class="infrastructure-list_enumeration">кабельных сетей</li>
+                            <li class="infrastructure-list_enumeration">объектов микрогенерации</li>
+                            <li class="infrastructure-list_enumeration">систем интеллектуального учета электроэнергии</li>
+                            <li class="infrastructure-list_enumeration">систем автоматизации</li>
+                            <li class="infrastructure-list_enumeration">современных цифровых систем мониторинга и управления энергообъектом</li>
+                        </ul>
+                        <p class="infrastructure_text">Применяемые решения на современном оборудовании, изделиях и материалах в полном соответствии требованиям нормативных документов и политик компаний в области энергосбережения, энергоэффективности, экологичности и экономической эффективности</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="partners">
+            <div class="partners-container container">
+                <h2 class="partners_title">Наши партёры</h2>
+                <ul class="partners-list">
+                    <li class="partners-list_enumeration">
+                        <div class="partner_logo__wrapper"><img class="partner_logo" src="./assets/images/partners/partner.svg" alt=""></div>
+                    </li>
+                    <li class="partners-list_enumeration">
+                        <div class="partner_logo__wrapper"><img class="partner_logo" src="./assets/images/partners/partner.svg" alt=""></div>
+                    </li>
+                    <li class="partners-list_enumeration">
+                        <div class="partner_logo__wrapper"><img class="partner_logo" src="./assets/images/partners/partner.svg" alt=""></div>
+                    </li>
+                    <li class="partners-list_enumeration">
+                        <div class="partner_logo__wrapper"><img class="partner_logo" src="./assets/images/partners/partner.svg" alt=""></div>
+                    </li>
+                    <li class="partners-list_enumeration">
+                        <div class="partner_logo__wrapper"><img class="partner_logo" src="./assets/images/partners/partner.svg" alt=""></div>
+                    </li>
+                    <li class="partners-list_enumeration">
+                        <div class="partner_logo__wrapper"><img class="partner_logo" src="./assets/images/partners/partner.svg" alt=""></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container container">
+                <div class="footer-content">
+                    <div class="logo__wrapper"><img class="logo" src="./assets/images/logo.svg" alt="ООО &quot;Партнер&quot;" usemap="#logo_link"></div>
+                    <div class="address__wrapper">
+                        <address class="address"><a class="address_phone" href="tel:+79001200000">+7 900 120-00-00</a><a class="address_email" href="mailto:ooo-partner@internet.ru">ooo-partner@internet.ru</a></address>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="rights">
+            <p class="rights_text">&copy;&nbsp;
+            <p id="rights_text--date"></p>&nbsp;<p id="company_name">ООО “Партнер”</p>. Все права защищены.</p>
+        </div>
     </div>
 </body>
 

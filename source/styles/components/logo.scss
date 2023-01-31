@@ -1,7 +1,12 @@
 .logo {
     &__wrapper {
-        width: $logo_width; height: $logo_height;
         overflow: hidden;
+        @include mediaQuery($breakpoint-sm) {
+            width: 157px; height: 37px;
+        }
+        @include mediaQuery($breakpoint-lg) {
+            width: 253px; height: 62px;
+        }
     }
     width: 100%; height: 100%;
     object-fit: contain;
