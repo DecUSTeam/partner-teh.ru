@@ -18,7 +18,6 @@
         border-radius: 30px;
         @include mediaQueryMax($breakpoint-md) {
             padding: 10px 15px;
-            gap: 20px 5px;
             grid-template-columns: 1fr 1fr;
         }
         @include mediaQueryMax($breakpoint-lg) {

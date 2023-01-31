@@ -38,6 +38,9 @@
     }
     &-control {
         position: relative;
+        & .main-image {
+            display: none;
+        }
         @include mediaQueryMax($breakpoint-md) {
             padding: 0;
             display: flex;
@@ -46,10 +49,21 @@
             overflow: hidden;
             width: 100%;
             background-color: white;
-            .main-image {
+            & .main-image {
+                display: block;
                 position: static;
                 height: 120px;
                 width: auto;
+            }
+        }
+        @include mediaQueryMin($breakpoint-md) {
+            &::before {
+                /* Для отработки mousemove js */
+                content: '';
+                position: absolute;
+                top: 0; left: 0;
+                width: 100%; height: 100%;
+                border-radius: 30px;
             }
         }
         &_text {
@@ -159,10 +173,6 @@
             aspect-ratio: 1256 / 755;
             height: 600px;
             transition: $animation;
-            opacity: 1;
-            &.unvisible {
-                opacity: .1;
-            }
             @include mediaQueryMax(400px) {
                 top: 125px; right: 0;
                 height: 100px;
@@ -191,5 +201,10 @@
         top: 0; left: 0;
         width: 100%; height: 100%;
         object-fit: contain;
+        transition: $animation;
+        opacity: 1;
+        & ~ &.unvisible {
+            opacity: 0;
+        }
     }
 }

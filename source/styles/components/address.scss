@@ -1,4 +1,5 @@
 .address {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -6,15 +7,7 @@
 
     font-weight: 600;
     text-align: right;
-    @include mediaQueryMax($breakpoint-lg) {
-        flex-direction: row;
-    }
     &_phone {
         padding: 5px;
-        display: block;
-        @include mediaQueryMax($breakpoint-sm) {
-            position: absolute;
-            bottom: -10px; left: 10px;
-        }
     }
 }

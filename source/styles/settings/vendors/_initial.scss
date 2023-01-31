@@ -17,6 +17,7 @@
     line-height: calc($font-size_mobile + 6px);
     color:        $TEXT_COLOR;
     font-feature-settings: "lnum";
+    transition: $animation;
     @include mediaQueryMax($breakpoint-md) {
         line-height: calc($font-size_mobile + 4px);
         font-size: $font-size_mobile;

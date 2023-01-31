@@ -1,6 +1,22 @@
 .footer {
     &-container {
+        padding: 23px 0;
         display: flex;
         justify-content: space-between;
+        @include mediaQueryMax($breakpoint-sm) {
+            flex-direction: column;
+        }
+        .address {
+            align-self: end;
+            align-items: end;
+        }
+        .logo {
+            &__wrapper {
+                align-self: start;
+                @include mediaQueryMax($breakpoint-sm) {
+                    height: 60px;
+                }
+            }
+        }
     }
 }

@@ -14,8 +14,17 @@
             gap: 10px;
         }
     }
-    .address_email {
-        display: none;
+    .address {
+        position: static;
+        &_email {
+            display: none;
+        }
+        &_phone {
+            @include mediaQueryMax($breakpoint-sm) {
+                position: absolute;
+                bottom: -10px; left: 10px;
+            }
+        }
     }
     .control {
         @include mediaQueryMax($breakpoint-sm) {
