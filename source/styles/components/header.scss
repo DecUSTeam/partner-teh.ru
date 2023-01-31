@@ -1,0 +1,29 @@
+.header {
+    &-container {
+        position: relative;
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        @include mediaQueryMax($breakpoint-lg) {
+            gap: 10px;
+        }
+    }
+    .address_email {
+        display: none;
+    }
+    .control {
+        @include mediaQueryMax($breakpoint-sm) {
+            font-size: 80%;
+        }
+        @include mediaQueryMax($breakpoint-lg) {
+            padding: 10px 15px;
+            font-size: 80%;
+        }
+    }
+}

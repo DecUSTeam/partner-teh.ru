@@ -12,15 +12,14 @@
     background:     $BG_COLOR;
 
     font-family: $font-family;
+    font-size:     $font-size;
     font-weight: $font-weight;
-    line-height: $line-height;
+    line-height: calc($font-size_mobile + 6px);
     color:        $TEXT_COLOR;
     font-feature-settings: "lnum";
-    @include mediaQuery($breakpoint-xs) {
+    @include mediaQueryMax($breakpoint-md) {
+        line-height: calc($font-size_mobile + 4px);
         font-size: $font-size_mobile;
-    }
-    @include mediaQuery($breakpoint-md) {
-        font-size:     $font-size;
     }
 }
 

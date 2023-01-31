@@ -1,51 +1,38 @@
 /* Adaptive */
-@include mediaQuery($breakpoint-xs) {
+@include mediaQueryMin($breakpoint-xs) {
     .container {
+        margin: 0 auto;
         padding-left: 10px;
         padding-right: 10px;
+        width: 100%;
     }
 }
-@include mediaQuery($breakpoint-sm) {
+@include mediaQueryMin($breakpoint-sm) {
     .container {
         width: 540px;
     }
 }
 
-@include mediaQuery($breakpoint-md) {
+@include mediaQueryMin($breakpoint-md) {
     .container {
         width: 720px;
     }
 }
 
-@include mediaQuery($breakpoint-lg) {
+@include mediaQueryMin($breakpoint-lg) {
     .container {
         width: 960px;
     }
 }
 
-@include mediaQuery($breakpoint-xl) {
+@include mediaQueryMin($breakpoint-xl) {
     .container {
         width: 1140px;
     }
 }
 
-@include mediaQuery($breakpoint-xxl) {
+@include mediaQueryMin($breakpoint-xxl) {
     .container {
         width: 1320px;
-    }
-}
-@include mediaQuery(1500px) {
-    .container {
-        width: 1420px;
-    }
-}
-@include mediaQuery(1600px) {
-    .container {
-        width: 1520px;
-    }
-}
-@include mediaQuery(1950px) {
-    .container {
-        width: 1920px;
     }
 }
